@@ -20,3 +20,26 @@ The even list [2, 6]
 The odd list [1, 3, 5]
 
 ***
+# Input reading
+size = int(input().strip())
+elements = []
+
+# Read the elements into the list
+for _ in range(size):
+    element = int(input().strip())
+    elements.append(element)
+
+# Initialize lists for even and odd numbers
+even_list = []
+odd_list = []
+
+# Separate even and odd numbers
+for num in elements:
+    if num % 2 == 0:
+        even_list.append(num)
+    else:
+        odd_list.append(num)
+
+# Output the results
+print("The even list", even_list)
+print("The odd list", odd_list)
